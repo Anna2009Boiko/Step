@@ -1,0 +1,61 @@
+
+@import "normalize", "fonts", "html", "mixins", "variables", "header", "revolutionary", "here_is", "about_fork", "pricing";
+
+html,
+.page__body {
+height: 100%;
+}
+.page__body {
+font-family:$font-Monserat;
+display: flex;
+flex-direction: column;
+}
+.page__main {
+flex-grow: 1;
+}
+
+.btn {
+    background: $main-color-curent;
+    border-radius: 40px;
+    color: $main-color;
+    text-decoration: none;
+    display: inline-block;
+    }
+    
+    .btn:hover {
+    background-color: $main-color;
+    color: $main-color-curent;
+    border: 1px solid #8D81AC;
+    }
+    
+    
+    %list-clear {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    }
+    
+    .section-title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 50px;
+        text-align: center;
+        color: #ffffff;
+    
+        @include mq(992px, max) {
+            font-size: 42px;
+            line-height: 44px;
+        }
+    
+        @include mq(480px, max) {
+            font-size: 36px;
+            line-height: 48px;
+        }
+    }
+    
+.container {
+    max-width: 1220px;
+    min-width: 300px;
+    padding: 0 10px;
+    margin: 0 auto;
+    }
